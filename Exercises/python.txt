@@ -1,0 +1,50 @@
+G --> C
+C --> G
+T --> A
+A --> U
+
+b=input()
+a="GCTA";c="CGAU"
+try:print(''.join([c[a.index(i)]for i in b]))
+except:print("Invalid Input")
+
+------------------------------------------------
+
+primos
+
+i=j = 0
+
+flag = 0
+
+n = (int)(input())
+
+for i in range(2, n):
+
+    flag = 0
+
+    for j in range(2, i):
+
+        if(i%j == 0):
+
+            flag = 1
+
+            break
+
+    if(flag == 0):
+
+        print(i, end=" ")
+-------------------------------------------------
+
+palindromos
+
+word = input()
+
+wordinverse = (word)[::-1]
+
+if(wordinverse == word):
+
+    print("YES")
+
+else:
+
+    print("NO")
