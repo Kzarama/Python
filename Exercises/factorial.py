@@ -1,25 +1,16 @@
-def factorialInterativo(num):
-
+# Factorial of a number in a iterative method and a recursive method
+def factorialIterative(num):
     for i in range(num-1, 1, -1):
-
         num *= i
-
     return num
 
-
-def factorialRecursivo(num):
-
+def factorialRecursive(num):
     if num == 0:
-
         return 1
-
     else:
+        return factorialRecursive(num-1)*num
 
-        return factorialRecursivo(num-1)*num
+num = int(input("Enter a number:"))
 
-
-
-num = int(input("Ingrese un numero"))
-
-print(factorialInterativo(num))
-print(factorialRecursivo(num))
+print(factorialIterative(num))
+print(factorialRecursive(num))

@@ -1,5 +1,6 @@
-a = int(input("INGRESE EL PRIMER NUMERO: "))
-b = int(input("INGRESE EL SEGUNDO NUMERO: "))
+# Combinatorial between two numbers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
 numA = a
 numB = b
 c = numA - numB
@@ -12,5 +13,5 @@ for b in range (b,0,-1):
 	factorialB *= b;
 for c in range (c,0,-1):
 	factorialC *= c
-combinarotio = (factorialA/(factorialC*factorialB))
-print ("el combinatorio es: ", combinarotio)
+combinatorial = (factorialA/(factorialC*factorialB))
+print ("The combinatorial is: ", combinatorial)
