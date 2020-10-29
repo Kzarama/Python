@@ -1,10 +1,3 @@
-# Text to speech
-install pyttsx3 to tss_pyttsx3
-~~~bash
-pip3 install pytts3
-~~~
+# Text to speech (TTS)
 
-install pyttsx3 to tts_gtts
-~~~bash
-pip3 install gtts
-~~~
+A text-to-speech (TTS) system converts normal language text into speech; other systems render symbolic linguistic representations like phonetic transcriptions into speech.
