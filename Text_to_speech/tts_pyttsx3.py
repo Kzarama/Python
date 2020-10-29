@@ -1,4 +1,9 @@
 import pyttsx3
+engine = pyttsx3.init()
+engine.say("I will speak this text")
+engine.runAndWait()
+
+'''import pyttsx3
 engine = pyttsx3.init() # object creation
 
 """ RATE"""
@@ -20,4 +25,4 @@ engine.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 f
 engine.say("Hello World!")
 engine.say('My current speaking rate is ' + str(rate))
 engine.runAndWait()
-engine.stop()
+engine.stop()'''
