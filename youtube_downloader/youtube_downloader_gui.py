@@ -45,40 +45,33 @@ class Downloader(object):
         self.save_path = os.path.join(os.path.expanduser('~'), 'Downloads')
         os.chdir(self.save_path)
         self.download_page()
-        # self.about_page()
+        self.about_page()
 
     def download_page(self):
         self.url_label = Label(
             self.download_tab, text='Video / Playlist / URL:')
         self.url_label.grid(column=1, row=0)
-
         self.url_entry = Entry(self.download_tab, width=48)
         self.url_entry.grid(column=0, row=1, columnspan=3, padx=5, pady=5)
-
         self.option = LabelFrame(
             self.download_tab, text="Download as", height=50, width=250)
         self.option.grid(column=1, row=2)
-
         self.video_option = Radiobutton(
             self.option, text="Video", variable=self.options, value=0)
         self.video_option.grid(column=0, row=0, padx=10)
-
         self.song_option = Radiobutton(
             self.option, text="Song", variable=self.options, value=1)
         self.song_option.grid(column=1, row=0, padx=10)
-
         self.audioQ_label = Label(self.option, text="Audio quality")
         self.audioQ_label.grid(column=0, row=1, pady=5)
         self.audioQ_drop = OptionMenu(
-            self.option, self.format, *self.format_opts)
+            self.option, self.quality, *self.quality_opts)
         self.audioQ_drop.grid(column=1, row=1)
-
         self.audioF_label = Label(self.option, text="Audio Format")
         self.audioF_label.grid(column=0, row=2)
         self.audioF_drop = OptionMenu(
-            self.option, self.quality, *self.format_opts)
+            self.option, self.format, *self.format_opts)
         self.audioF_drop.grid(column=1, row=2)
-
         self.location_label = Label(self.download_tab, text="Location:")
         self.location_label.grid(column=0, row=3)
         self.location_entry = Entry(self.download_tab, width=35)
@@ -87,10 +80,12 @@ class Downloader(object):
         self.location_button = Button(
             self.download_tab, text="Set", command=self.set_path)
         self.location_button.grid(column=2, row=4)
-
         self.download_button = Button(
             self.download_tab, text="Download", command=self.download)
         self.download_button.grid(column=1, row=5, pady=15)
+
+    def about_page(self):
+        pass
 
     def download(self):
         url = self.url_entry.get()
@@ -140,5 +135,6 @@ class Downloader(object):
 if __name__ == '__main__':
     root = Tk()
     root.title('Youtube downloader')
+    os.chdir(os.path.dirname(os.path.realpath(__file__)))
     Downloader(root)
     root.mainloop()
