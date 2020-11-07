@@ -15,7 +15,7 @@ Training with python, here there are a exercises of python made in:
 - [Keylogger](keylogger)
 - [Conections of the router](router_conextions)
 - [Downloader of music from youtube](youtube_downloader)
-- [The game life game](https://github.com/Kzarama/LifeGame)
+- [The game life game](https://github.com/Kzarama/Games_python)
 - [Course of data analitics](https://github.com/Kzarama/Analitics)
 - [Machine learning](https://github.com/Kzarama/machine_learning)
 
