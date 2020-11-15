@@ -10,6 +10,7 @@ Training with python, here there are a exercises of python made in:
 - [A chat between clients using a server](chat)
 - [Two ways to transform text to speech](Text_to_speech)
 - [Selenium](https://github.com/Kzarama/Selenium_Python)
+- [Flask](https://github.com/Kzarama/flask)
 - [Django](https://github.com/Kzarama/Django)
 - [DDOS attack](ddos)
 - [Keylogger](keylogger)
