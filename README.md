@@ -38,3 +38,23 @@ source .env\bin\activate
 ```cmd
 pip freeze > requirements.txt
 ```
+
+## py file to exe
+
+Install pyinstaller
+
+```cmd
+pip install pyinstaller
+```
+
+Create the exe with 
+
+```cmd
+pyinstaller FILE_NAME.py
+```
+
+Options:
+
+- -F, --onefile: to create only one file
+- -i, --icon: to add a icon in the exe
+
