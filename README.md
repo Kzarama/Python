@@ -10,6 +10,7 @@ Training with python, here there are a exercises of python made in:
 - [A chat between clients using a server](chat)
 - [Two ways to transform text to speech](Text_to_speech)
 - [Selenium](https://github.com/Kzarama/Selenium_Python)
+- [Flask](https://github.com/Kzarama/flask)
 - [Django](https://github.com/Kzarama/Django)
 - [DDOS attack](ddos)
 - [Keylogger](keylogger)
@@ -19,7 +20,17 @@ Training with python, here there are a exercises of python made in:
 - [Course of data analitics](https://github.com/Kzarama/Analitics)
 - [Machine learning](https://github.com/Kzarama/machine_learning)
 
-## virtual environment
+## Virtual environment
+
+### First way
+
+To create a venv
+
+```cmd
+virtualenv .env --python=python3.8
+```
+
+### Second way
 
 To create a venv
 
@@ -27,13 +38,17 @@ To create a venv
 python3 -m venv .env
 ```
 
-To activate venv
+### To activate venv
 
 ```cmd
 source .env\bin\activate
 ```
 
 ## Install libraries from requirements.txt
+
+```cmd
+pip install -r requirements.txt
+```
 
 ```cmd
 pip freeze > requirements.txt
