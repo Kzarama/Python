@@ -27,7 +27,7 @@ Training with python, here there are a exercises of python made in:
 To create a venv
 
 ```cmd
-virtualenv .env --python=python3.8
+python3 -m venv .env
 ```
 
 ### Second way
@@ -35,7 +35,7 @@ virtualenv .env --python=python3.8
 To create a venv
 
 ```cmd
-python3 -m venv .env
+virtualenv .env --python=python3.8
 ```
 
 ### To activate venv
@@ -72,4 +72,3 @@ Options:
 
 - -F, --onefile: to create only one file
 - -i, --icon: to add a icon in the exe
-
