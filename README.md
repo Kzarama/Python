@@ -2,6 +2,15 @@
 
 ![](img/python.png)
 
+## Content
+
+- **[Projects](#projects)**
+- **[Virtual environment](#virtual-environment)**
+- **[Install libraries](#install-libraries-from-requirements.txt)**
+- **[py file to exe](#py-file-to-exe)**
+
+## Projects
+
 Training with python, here there are a exercises of python made in:
 
 - [HackerEarth challenges](HackerEarth)
@@ -22,35 +31,43 @@ Training with python, here there are a exercises of python made in:
 
 ## Virtual environment
 
-### First way
+### First method
 
 To create a venv
 
-```cmd
+```bash
 python3 -m venv .env
 ```
 
-### Second way
+### Second method
 
 To create a venv
 
-```cmd
+```bash
 virtualenv .env --python=python3.8
 ```
 
 ### To activate venv
 
-```cmd
+#### In linux
+
+```bash
 source .env\bin\activate
+```
+
+#### In windows
+
+```cmd
+.env\Scrips\activate
 ```
 
 ## Install libraries from requirements.txt
 
-```cmd
+```bash
 pip install -r requirements.txt
 ```
 
-```cmd
+```bash
 pip freeze > requirements.txt
 ```
 
@@ -58,13 +75,13 @@ pip freeze > requirements.txt
 
 Install pyinstaller
 
-```cmd
+```bash
 pip install pyinstaller
 ```
 
-Create the exe with 
+Create the exe with
 
-```cmd
+```bash
 pyinstaller FILE_NAME.py
 ```
 
