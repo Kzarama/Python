@@ -12,5 +12,11 @@ install youtube_dl with
 pip install youtube_dl
 ```
 
+upgrade youtube-dl, in the bash run:
+
+```bash
+pip install --upgrade youtube-dl
+```
+
 [youtube downloader cli](./youtube_downloader.py)
 [youtube downloader gui](./youtube_downloader_gui.py)
